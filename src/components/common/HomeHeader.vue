@@ -292,8 +292,14 @@
                 localStorage.setItem('flag', this.strflag)
             },
             gotoChineseParticiples() {
-                var href = 'http://114.242.223.253:8080/SSMLibrary/literatureupload.jsp'
+                this.strflag = '知识发现'
+                const {href} = this.$router.resolve({
+                    path: `/KnowDiscovery`
+                })
                 window.open(href, '_blank')
+                localStorage.setItem('flag', this.strflag)
+                // var href = 'http://114.242.223.253:8080/SSMLibrary/literatureupload.jsp'
+                // window.open(href, '_blank')
             },
             gotovisualization () {
                 this.strflag = '数据可视化'

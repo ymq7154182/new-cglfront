@@ -55,7 +55,7 @@
                     </el-table-column>
                 </el-table>
             </div>
-            <div id="chart" style="height: 600px;width: 100%;margin-top: 100px;margin-bottom: 100px"></div>
+            <div id="chart" style="height: 650px;width: 100%;margin-top: 100px;margin-bottom: 100px"></div>
         </div>
 
     </div>
@@ -432,8 +432,8 @@
                                 }
                             },
                             force: {
-                                edgeLength: [100,400],//线的长度，这个距离也会受 repulsion，支持设置成数组表达边长的范围
-                                repulsion: 400//节点之间的斥力因子。值越大则斥力越大
+                                edgeLength: [100,250],//线的长度，这个距离也会受 repulsion，支持设置成数组表达边长的范围
+                                repulsion: 1000//节点之间的斥力因子。值越大则斥力越大
                             }
                         }
                     ]
