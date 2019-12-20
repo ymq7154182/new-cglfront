@@ -3,6 +3,9 @@ import Router from 'vue-router';
 import ChineseParticiple from "../components/page/AIutil/ChineseParticiple/ChineseParticiple";
 import DataClear from "../components/page/AIutil/DataClear/DataClear";
 import AIuilt from "../components/page/AIutil/AIuilt";
+import HomePage from "../components/page/HomePage";
+import AboutUs from "../components/page/AboutUs";
+import KeJiao from "../components/page/KeJiao";
 
 Vue.use(Router);
 
@@ -21,6 +24,11 @@ export default new Router({
                   path: '/DataClear',
                   component: resolve => require(['../components/page/AIutil/DataClear/DataClear'], resolve),
                   meta: {title: '上传数据'}
+                },
+                {
+                    path: '/DataText',
+                    component: resolve => require(['../components/page/AIutil/DataClear/DataText'], resolve),
+                    meta: {title: '数据处理简介'}
                 },
                 {
                     path: '/startdeal1',
@@ -76,6 +84,16 @@ export default new Router({
                     path: '/Jinkuang',
                     component: resolve => require(['../components/page/AIutil/ChineseParticiple/Jinkuang'], resolve),
                     meta: {title: '金矿领域分词'}
+                },
+                {
+                    path: '/concept',
+                    component: resolve => require(['../components/page/AIutil/ChineseParticiple/concept'], resolve),
+                    meta: {title: '分词概念'}
+                },
+                {
+                    path: '/fenciapplication',
+                    component: resolve => require(['../components/page/AIutil/ChineseParticiple/fenciapplication'], resolve),
+                    meta: {title: '分词应用'}
                 },
                 {
                     path: '/Buxian',
@@ -165,6 +183,36 @@ export default new Router({
                     path: '/ProduceAtlas',
                     component: resolve => require(['../components/page/AIutil/KnowDiscovery/ProduceAtlas.vue'], resolve),
                     meta: {title: '生成图谱'}
+                },
+                {
+                    path: '/DomainKnowledge',
+                    component: resolve => require(['../components/page/AIutil/DomainKnowledge/DomainKnowledge.vue'], resolve),
+                    meta: {title: '领域知识库'}
+                },
+                {
+                    path: '/HotPoint',
+                    component: resolve => require(['../components/page/HotPoint/HotPoint.vue'], resolve),
+                    meta: {title: '热点预测'}
+                },
+                {
+                    path: '/TextClassification',
+                    component: resolve => require(['../components/page/AIutil/TextClassification/TextClassification.vue'], resolve),
+                    meta: {title: '文本分类'}
+                },
+                {
+                    path: '/TextCurrent',
+                    component: resolve => require(['../components/page/AIutil/TextClassification/TextCurrent.vue'], resolve),
+                    meta: {title: '文本分类现状'}
+                },
+                {
+                    path: '/TextApplication',
+                    component: resolve => require(['../components/page/AIutil/TextClassification/TextApplication.vue'], resolve),
+                    meta: {title: '文本分类应用'}
+                },
+                {
+                    path: '/QA',
+                    component: resolve => require(['../components/page/QA/QA.vue'], resolve),
+                    meta: {title: '问答机器人简介'}
                 }
                 // {
                 //     path: '/dashboard',
@@ -244,7 +292,15 @@ export default new Router({
         },
         {
             path: '/HomePage',
-            component: resolve => require(['../components/page/HomePage.vue'], resolve)
+            component: HomePage
+        },
+        {
+          path: '/AboutUs',
+          component: AboutUs
+        },
+        {
+          path: '/KeJiao',
+          component: KeJiao
         },
         // {
         //     path: '/ChineseParticple',

@@ -146,12 +146,12 @@
         name: "SmartCourt",
         data () {
             return {
-                url: 'http://zhongkeruitong.top/show/aa20020b9d58430fabb7693f46513b331569065368480.jpg',
-                srcList: ['http://zhongkeruitong.top/show/aa20020b9d58430fabb7693f46513b331569065368480.jpg'],
-                url2: 'http://zhongkeruitong.top/show/a93c786d61a349b380f7248b8cec4a861569065548494.jpg',
-                srcList2: ['http://zhongkeruitong.top/show/a93c786d61a349b380f7248b8cec4a861569065548494.jpg'],
-                url3: 'http://zhongkeruitong.top/show/1280e9ee575c456b958f39777fa0ef631569065693109.jpg',
-                srcList3: ['http://zhongkeruitong.top/show/1280e9ee575c456b958f39777fa0ef631569065693109.jpg']
+                url: 'http://zhongkeruitong.top/AIshow/aa20020b9d58430fabb7693f46513b331569065368480.jpg',
+                srcList: ['http://zhongkeruitong.top/AIshow/aa20020b9d58430fabb7693f46513b331569065368480.jpg'],
+                url2: 'http://zhongkeruitong.top/AIshow/a93c786d61a349b380f7248b8cec4a861569065548494.jpg',
+                srcList2: ['http://zhongkeruitong.top/AIshow/a93c786d61a349b380f7248b8cec4a861569065548494.jpg'],
+                url3: 'http://zhongkeruitong.top/AIshow/1280e9ee575c456b958f39777fa0ef631569065693109.jpg',
+                srcList3: ['http://zhongkeruitong.top/AIshow/1280e9ee575c456b958f39777fa0ef631569065693109.jpg']
 
             }
         }

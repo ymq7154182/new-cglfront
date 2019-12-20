@@ -1,7 +1,7 @@
 <template>
     <div>
         <el-alert
-            title="规则一： 清洗符号"
+            title="规则一"
             type="warning">
         </el-alert>
         <div class="rule1">

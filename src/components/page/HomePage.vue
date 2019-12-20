@@ -1,6 +1,10 @@
 <template>
     <div class="contents">
-        <HomeHeader></HomeHeader>
+        <div style="background-color: rgba(255, 255, 255, 0.9);position: fixed;width: 100%;z-index: 999" v-if="navBarFixed">
+            <HomeHeader v-on:flaglogin="flaglogin" :dashow="dashow"></HomeHeader>
+        </div>
+        <HomeHeader v-on:flaglogin="flaglogin" :dashow="dashow"></HomeHeader>
+
         <!--<div class="shortcut" >-->
             <!--<div class="w">-->
                 <!--<div class="fl">-->
@@ -154,8 +158,8 @@
                     <div class="box">
                         <img src="../../assets/327.jpg">
                         <div class="box-content">
-                            <h3 class="title">智慧推荐</h3>
-                            <span class="post">Wisdom is recommended</span>
+                            <h3 class="title">热点预测</h3>
+                            <span class="post">Hotspot prediction</span>
                         </div>
                         <ul class="icon">
                             <!--<li><a href="#"><i class="fa fa-search"></i></a></li>-->
@@ -210,7 +214,7 @@
                             <i class="ymq-iconrenjijiaohu iconstyle1"></i>
                         </div>
                         <div  class="imgtext">
-                            <span>智慧推荐</span>
+                            <span>热点预测</span>
                         </div>
                     </div>
                     <div class="box">
@@ -237,14 +241,14 @@
                     </div>
                 </div>
                 <div class="part3">
-                    <div>
-                        <div class="wordpart3" @click="gotoPachong">
-                            <i class="ymq-iconbug1 textpart3"></i>
-                        </div>
-                        <div class="word3">
-                            数据爬虫
-                        </div>
-                    </div>
+                    <!--<div>-->
+                        <!--<div class="wordpart3" @click="gotoPachong">-->
+                            <!--<i class="ymq-iconbug1 textpart3"></i>-->
+                        <!--</div>-->
+                        <!--<div class="word3">-->
+                            <!--数据爬虫-->
+                        <!--</div>-->
+                    <!--</div>-->
                     <div>
                         <div class="wordpart3" @click="gotoDataClear">
                             <i class="ymq-iconshujuwajue textpart3"></i>
@@ -255,7 +259,7 @@
 
                     </div>
                     <div>
-                        <div class="wordpart3">
+                        <div class="wordpart3" @click="TextClassification">
                             <i class="ymq-iconliebiao textpart3"></i>
                         </div>
                         <div class="word3">
@@ -289,14 +293,14 @@
                         </div>
 
                     </div>
-                    <div>
-                        <div class="wordpart3" @click="gotojishu">
-                            <i class="ymq-iconsever textpart3"></i>
-                        </div>
-                        <div class="word3">
-                            技术工程库
-                        </div>
-                    </div>
+                    <!--<div>-->
+                        <!--<div class="wordpart3" @click="gotojishu">-->
+                            <!--<i class="ymq-iconsever textpart3"></i>-->
+                        <!--</div>-->
+                        <!--<div class="word3">-->
+                            <!--技术工程库-->
+                        <!--</div>-->
+                    <!--</div>-->
                     <div>
                         <div class="wordpart3" @click="gotosuanfa">
                             <i class="ymq-iconcontainer-fill textpart3"></i>
@@ -307,13 +311,52 @@
                     </div>
                 </div>
             </div>
+            <div class="part3_1">
+                <div class="word1">
+                    <div class="text1">
+                        <span>行业服务</span>
+                    </div>
+                    <div class="text2">
+                        <!--<span>系统在智能工具部分为用户提供了用户个人文档处理服务，包括分词、标注以及用户个人文档图谱生成，以便用户快速理解文献信息。</span>-->
+                    </div>
+                </div>
+                <div class="part3_1_img">
+                    <div class="part-fl">
+                        <div class="img_up img_style">
+                            <div class="img_text_style">
+                                <span>教育AI</span>
+                            </div>
+                            <img src="../../assets/jiaoyu_4.jpg" style="width: 100%;height: 100%"/>
+                        </div>
+                        <div class="img_down img_style">
+                            <div class="img_text_style">
+                                <span>智慧城市</span>
+                            </div>
+                            <img src="../../assets/zhihuichengshi_4.jpg" style="width: 100%;height: 100%"/>
+                        </div>
+                    </div>
+                    <div class="part-fr">
+                        <div class="img_left img_style">
+                            <div class="img_text_style">
+                                <span>文情大数据</span>
+                            </div>
+                            <img src="../../assets/dashujv_5.jpg" style="width: 100%;height: 100%"/>
+                        </div>
+                        <div class="img_right img_style">
+                            <div class="img_text_style">
+                                <span>青少年编程</span>
+                            </div>
+                            <img src="../../assets/biancheng_2.jpg" style="width: 100%;height: 100%"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div style="background-color: #333333">
             <div style="margin: 0 auto;width: 80%">
                 <Footer/>
             </div>
         </div>
-
     </div>
 </template>
 
@@ -322,17 +365,22 @@
     import Footer from '@/components/common/Footer'
     import HomeHeader from '@/components/common/HomeHeader'
     import bus from '../common/bus'
+    import particlesJs from '../particles/Particles'
     export default {
         name: "HomePage",
         components: {
           Footer,
-            HomeHeader
+            HomeHeader,
+            particlesJs
         },
+        inject: ['reload'],
         data () {
             return {
                 navBarFixed: false,
                 strflag: '',
-                bannerH: 0
+                bannerH: 0,
+                flaglogins: false,
+                dashow: false
             }
         },
         mounted() {
@@ -349,79 +397,167 @@
             },
             watchScroll () {
                 var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-                // if (scrollTop > 49) {
-                //     this.navBarFixed = true
-                // } else {
-                //     this.navBarFixed = false
-                // }
+                if (scrollTop > 49) {
+                    this.navBarFixed = true
+                } else {
+                    this.navBarFixed = false
+                }
                 console.log(scrollTop)
             },
+            flaglogin(flaglogin) {
+              this.flaglogins  = flaglogin
+            },
             gotoChineseParticple () {
-                this.strflag = '中文分词工具'
-                const {href} = this.$router.resolve({
-                    path: `/ChineseParticple`,
-                    // query: {
-                    //     flag: this.strflag
-                    // }
-                })
-                window.open(href, '_blank')
-               localStorage.setItem('flag', this.strflag)
+                console.log(this.flaglogins)
+                if (this.flaglogins === false) {
+                    alert('请先登录！')
+                    this.dashow = true
+                } else {
+                    this.strflag = '中文分词工具'
+                    const {href} = this.$router.resolve({
+                        path: `/concept`,
+                        // query: {
+                        //     flag: this.strflag
+                        // }
+                    })
+                    window.open(href, '_blank')
+                    localStorage.setItem('flag', this.strflag)
+                }
                 // bus.$emit('flag', this.strflag)
 
             },
+            TextClassification () {
+                if (this.flaglogins === false) {
+                    alert('请先登录！')
+                    this.dashow = true
+                } else {
+                    this.strflag = '文本分类'
+                    const {href} = this.$router.resolve({
+                        path: `/TextClassification`,
+                        // query: {
+                        //     flag: this.strflag
+                        // }
+                    })
+                    window.open(href, '_blank')
+                    localStorage.setItem('flag', this.strflag)
+                }
+            },
             gotoDataClear () {
-                this.strflag = '数据处理工具'
-                const {href} = this.$router.resolve({
-                    path: `/DataClear`
-                })
-                window.open(href, '_blank')
-                localStorage.setItem('flag', this.strflag)
+                if (this.flaglogins === false) {
+                    alert('请先登录！')
+                    this.dashow = true
+                } else {
+                    this.strflag = '数据处理工具'
+                    const {href} = this.$router.resolve({
+                        path: `/DataText`
+                    })
+                    window.open(href, '_blank')
+                    localStorage.setItem('flag', this.strflag)
+                }
             },
             gotovisualization () {
-                this.strflag = '数据可视化'
-                const {href} = this.$router.resolve({
-                    path: `/text`
-                })
-                window.open(href, '_blank')
-                localStorage.setItem('flag', this.strflag)
+                if (this.flaglogins === false) {
+                    alert('请先登录！')
+                    this.dashow = true
+                } else {
+                    this.strflag = '数据可视化'
+                    const {href} = this.$router.resolve({
+                        path: `/text`
+                    })
+                    window.open(href, '_blank')
+                    localStorage.setItem('flag', this.strflag)
+                }
             },
             gotoPachong () {
-                var href = 'http://zhongkeruitong.top/crawl'
-                window.open(href, '_blank')
+                if (this.flaglogins === false) {
+                    alert('请先登录！')
+                    this.dashow = true
+                } else {
+                    var href = 'http://zhongkeruitong.top/crawl'
+                    window.open(href, '_blank')
+                }
             },
             gotoChineseParticiples() {
-                this.strflag = '知识发现'
-                const {href} = this.$router.resolve({
-                    path: `/KnowDiscovery`
-                })
-                window.open(href, '_blank')
-                localStorage.setItem('flag', this.strflag)
+                if (this.flaglogins === false) {
+                    alert('请先登录！')
+                    this.dashow = true
+                } else {
+                    this.strflag = '知识发现'
+                    const {href} = this.$router.resolve({
+                        path: `/KnowDiscovery`
+                    })
+                    window.open(href, '_blank')
+                    localStorage.setItem('flag', this.strflag)
+                }
                 // var href = 'http://114.242.223.253:8080/SSMLibrary/literatureupload.jsp'
                 // window.open(href, '_blank')
             },
             gotochuizhi () {
-                var url = 'http://114.242.223.253:8080/SSMLibrary/connection.jsp'
-                window.open(url, '_blank')
+                if (this.flaglogins === false) {
+                    alert('请先登录！')
+                    this.dashow = true
+                } else {
+                    // var url = 'http://114.242.223.253:8080/SSMLibrary/connection.jsp'
+                    // window.open(url, '_blank')
+                    this.strflag = '领域知识库'
+                    const {href} = this.$router.resolve({
+                        path: `/DomainKnowledge`
+                    })
+                    window.open(href, '_blank')
+                    localStorage.setItem('flag', this.strflag)
+                }
             },
             gotoAIuilt () {
-                const {href} = this.$router.resolve({
-                    path: `/AIuilt`
-                })
-                window.open(href, '_blank')
+                if (this.flaglogins === false) {
+                    alert('请先登录！')
+                    this.dashow = true
+                } else {
+                    const {href} = this.$router.resolve({
+                        path: `/AIuilt`
+                    })
+                    window.open(href, '_blank')
+                }
             },
             QA () {
                 // var url = 'http://58.119.112.11:11004/chatbot'
-                var url = 'http://zhongkeruitong.top/show/chatbot/'
-                window.open(url, '_blank')
+                // if (this.flaglogins === false) {
+                //     alert('请先登录！')
+                //     this.dashow = true
+                // } else {
+                //     var url = 'http://58.119.112.15:11014/home'
+                //     window.open(url, '_blank')
+                // }
+                if (this.flaglogins === false) {
+                    alert('请先登录！')
+                    this.dashow = true
+                } else {
+                    this.strflag = '智能问答'
+                    const {href} = this.$router.resolve({
+                        path: `/QA`
+                    })
+                    window.open(href, '_blank')
+                    localStorage.setItem('flag', this.strflag)
+                }
             },
             gotojishu () {
-                var url = 'http://www.zhongkeruitong.top/pel/pel/index.html'
-                window.open(url, '_blank')
+                if (this.flaglogins === false) {
+                    alert('请先登录！')
+                    this.dashow = true
+                } else {
+                    var url = 'http://www.zhongkeruitong.top/pel/pel/index.html'
+                    window.open(url, '_blank')
+                }
             },
             gotosuanfa () {
-                var url = 'http://zhongkeruitong.top/boot/#/springboot'
-                window.open(url, '_blank')
-            }
+                if (this.flaglogins === false) {
+                    alert('请先登录！')
+                    this.dashow = true
+                } else {
+                    var url = 'http://zhongkeruitong.top/boot/#/springboot'
+                    window.open(url, '_blank')
+                }
+
+            },
         }
 
 
@@ -532,12 +668,13 @@
     .contents {
         width: 100%;
         height: 100%;
-        overflow-y: scroll;
+        /*overflow-y: scroll;*/
         box-sizing: border-box;
 
     }
     .part {
         width: 80%;
+        max-width: 1200px;
         margin: 130px auto;
         /*background-color: #409EFF;*/
         /*height: 500px;*/
@@ -701,6 +838,53 @@
         /*background-color: #5daf34;*/
         margin-top: 130px;
     }
+    .part3_1 {
+        height: 500px;
+        margin-top: 130px;
+    }
+    .part3_1_img {
+        height: 100%;
+    }
+    .part-fl {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+    .part-fr {
+        width: 50%;
+        height: 100%;
+        float: right;
+    }
+    .img_up {
+        height: 50%;
+        overflow: hidden;
+    }
+    .img_style img {
+        transition: all 1s;
+    }
+    .img_style:hover img {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    .img_style {
+        position: relative;
+    }
+    .img_down {
+        height: 50%;
+        overflow: hidden;
+    }
+    .img_left {
+        width: 50%;
+        height: 100%;
+        float: left;
+        overflow: hidden;
+    }
+    .img_right {
+        width: 50%;
+       overflow: hidden;
+        float: right;
+        height: 100%;
+    }
     .icontext {
         text-align: center;
         margin-top: 40px;
@@ -816,6 +1000,18 @@
         position:fixed;
         top:0;
         z-index:999;
+    }
+    .img_text_style {
+        position: absolute;
+        color: white;
+        width: 100%;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+        z-index: 999;
+        font-weight: bold;
     }
 
 

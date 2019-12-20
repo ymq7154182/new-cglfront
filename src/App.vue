@@ -44,4 +44,7 @@
         /*background-color: #EAEBED;*/
         /*border: 0 solid;*/
     /*}*/
+    .el-textarea.is-disabled .el-textarea__inner {
+        color: black;
+    }
 </style>

@@ -41,6 +41,11 @@
                 flag: '',
                 items: [
                     {
+                        icon: 'el-icon-s-home',
+                        index: 'DataText',
+                        title: '数据处理简介'
+                    },
+                    {
                         icon: 'el-icon-upload',
                         index: 'DataClear',
                         title: '上传数据'
@@ -145,54 +150,54 @@
                 items2: [
                     {
                         icon: 'el-icon-lx-home',
-                        index: 'ChineseParticple',
-                        title: '数据处理'
+                        index: 'concept',
+                        title: '分词概念'
                     },
                     {
                         icon: 'el-icon-document-copy',
-                        index: 'Hanlp',
-                        title: 'Hanlp分词',
+                        index: 'fenciapplication',
+                        title: '分词应用',
                     },
-                    {
-                        icon: 'el-icon-document',
-                        index: 'Ansj',
-                        title: 'ansj分词器',
-                    },
-                    {
-                        icon: 'el-icon-s-unfold',
-                        index: 'Jieba',
-                        title: 'jieba分词器',
-                    },
-                    {
-                        icon: 'el-icon-s-operation',
-                        index: 'Thulac',
-                        title: 'Thulac分词器',
-                    },
-                    {
-                        icon: 'el-icon-s-order',
-                        index: 'Word',
-                        title: 'Word分词器',
-                    },
-                    {
-                        icon: 'el-icon-c-scale-to-original',
-                        index: 'Shenwu',
-                        title: '生物领域分词',
-                    },
-                    {
-                        icon: 'el-icon-files',
-                        index: 'Jinkuang',
-                        title: '金矿领域分词',
-                    },
-                    {
-                        icon: 'el-icon-receiving',
-                        index: 'Buxian',
-                        title: '不限领域分词',
-                    },
-                    {
-                        icon: 'el-icon-edit-outline',
-                        index: 'feedback2',
-                        title: '问题反馈'
-                    }
+                    // {
+                    //     icon: 'el-icon-document',
+                    //     index: 'Ansj',
+                    //     title: 'ansj分词器',
+                    // },
+                    // {
+                    //     icon: 'el-icon-s-unfold',
+                    //     index: 'Jieba',
+                    //     title: 'jieba分词器',
+                    // },
+                    // {
+                    //     icon: 'el-icon-s-operation',
+                    //     index: 'Thulac',
+                    //     title: 'Thulac分词器',
+                    // },
+                    // {
+                    //     icon: 'el-icon-s-order',
+                    //     index: 'Word',
+                    //     title: 'Word分词器',
+                    // },
+                    // {
+                    //     icon: 'el-icon-c-scale-to-original',
+                    //     index: 'Shenwu',
+                    //     title: '生物领域分词',
+                    // },
+                    // {
+                    //     icon: 'el-icon-files',
+                    //     index: 'Jinkuang',
+                    //     title: '金矿领域分词',
+                    // },
+                    // {
+                    //     icon: 'el-icon-receiving',
+                    //     index: 'Buxian',
+                    //     title: '不限领域分词',
+                    // },
+                    // {
+                    //     icon: 'el-icon-edit-outline',
+                    //     index: 'feedback2',
+                    //     title: '问题反馈'
+                    // }
                     // {
                     //     icon: 'el-icon-lx-home',
                     //     index: 'dashboard',
@@ -528,6 +533,69 @@
                     //     index: 'ProduceAtlas',
                     //     title: '生成图谱'
                     // },
+                ],
+                items6: [
+                    {
+                        icon: 'el-icon-c-scale-to-original',
+                        index: 'KnowDiscovery',
+                        title: '领域知识库'
+                    },
+                    // {
+                    //     icon: 'el-icon-c-scale-to-original',
+                    //     index: 'ProduceAtlas',
+                    //     title: '生成图谱'
+                    // },
+                ],
+                items7: [
+                    {
+                        icon: 'el-icon-c-scale-to-original',
+                        index: 'HotPoint',
+                        title: '热点预测'
+                    },
+                    // {
+                    //     icon: 'el-icon-c-scale-to-original',
+                    //     index: 'ProduceAtlas',
+                    //     title: '生成图谱'
+                    // },
+                ],
+                items8: [
+                    {
+                        icon: 'el-icon-c-scale-to-original',
+                        index: 'TextClassification',
+                        title: '文本分类定义'
+                    },
+                    {
+                        icon: 'el-icon-c-scale-to-original',
+                        index: 'TextCurrent',
+                        title: '文本分类现状'
+                    },
+                    {
+                        icon: 'el-icon-c-scale-to-original',
+                        index: 'TextApplication',
+                        title: '文本分类应用'
+                    },
+                ],
+                items9: [
+                    {
+                        icon: 'el-icon-c-scale-to-original',
+                        index: 'QA',
+                        title: '问答机器人简介'
+                    },
+                    // {
+                    //     icon: 'el-icon-c-scale-to-original',
+                    //     index: 'QA1',
+                    //     title: '地质小助手'
+                    // },
+                    // {
+                    //     icon: 'el-icon-c-scale-to-original',
+                    //     index: 'QA2',
+                    //     title: '地质问答机器人'
+                    // },
+                    // {
+                    //     icon: 'el-icon-c-scale-to-original',
+                    //     index: 'QA3',
+                    //     title: '医疗问答机器人'
+                    // },
                 ]
             }
         },
@@ -569,7 +637,20 @@
                 this.itemsf = this.items4
             } else if (this.flag === '知识发现') {
                 this.itemsf = this.items5
+            } else if (this.flag === '领域知识库') {
+                this.itemsf = this.items6
+            } else if (this.flag === '热点预测') {
+                this.itemsf = this.items7
+            } else if (this.flag === '文本分类') {
+                this.itemsf = this.items8
+            } else if (this.flag === '智能问答') {
+                this.itemsf = this.items9
             }
+        },
+        methods: {
+            // gotopage(item) {
+            //     console.log(item.title)
+            // }
         }
     }
 </script>

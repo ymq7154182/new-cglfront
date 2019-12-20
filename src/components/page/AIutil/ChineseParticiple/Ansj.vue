@@ -79,7 +79,7 @@
         methods: {
             DicAnalysisSegment () {
                 this.textarea1 = localStorage.getItem('text')
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/DicAnalysisSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/DicAnalysisSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textarea2 = res.data.segment.terms
                     this.color = '#FD694E'
@@ -87,7 +87,7 @@
             },
             ToAnalysisSegment () {
                 this.textarea1 = localStorage.getItem('text')
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/ToAnalysisSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/ToAnalysisSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textarea2 = res.data.segment.terms
 
@@ -96,28 +96,28 @@
             },
             IndexAnalysisSegment () {
                 this.textarea1 = localStorage.getItem('text')
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/IndexAnalysisSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/IndexAnalysisSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textarea2 = res.data.segment.terms
                     this.color = '#4DC9FE'
                 })
             },
             DicAnalysisSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/DicAnalysisSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/DicAnalysisSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaDicAnalysisSegment = res.data.segment.terms
                     this.color1 = '#FD694E'
                 })
             },
             ToAnalysisSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/ToAnalysisSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/ToAnalysisSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaToAnalysisSegment = res.data.segment.terms
                     this.color3 = '#EEAC39'
                 })
             },
             IndexAnalysisSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/IndexAnalysisSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/IndexAnalysisSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaIndexAnalysisSegment = res.data.segment.terms
 

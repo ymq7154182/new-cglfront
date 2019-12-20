@@ -9,13 +9,13 @@
                 <img src="../../../assets/111.png" height="80" style="">
             </div>
             <ul class="fr">
-                <li @click="gotopachong"><a href="#">数据爬虫</a></li>
+                <!--<li @click="gotopachong"><a href="#">数据爬虫</a></li>-->
                 <li @click="gotoData"><a href="#">数据清洗</a></li>
                 <li><a href="#">文本分类</a></li>
                 <li @click="gotoChineseParticiple"><a href="#">中文分词</a></li>
                 <li @click="gotoChineseParticiples"><a href="#">知识发现</a></li>
                 <li @click="gotovisualization"><a href="#">数据可视化</a></li>
-                <li @click="gotojishu"><a href="#">技术工程库</a></li>
+                <!--<li @click="gotojishu"><a href="#">技术工程库</a></li>-->
                 <li @click="gotosuanfa"><a href="#">模型算法库</a></li>
                 <!--<li>-->
                 <!--&lt;!&ndash;<el-button type="primary" round class="buttonlogin" @click="login" v-if="flag">登录</el-button>&ndash;&gt;-->
@@ -36,19 +36,19 @@
         </div>
         <div class="home">
             <div class="part1">
-                <div class="list1 list" @click="gotopachong">
-                    <div class="word"><i class="ymq-iconbug1" style=" font-size: 60px;"></i></div>
-                    <div class="word2">
-                        <span>数据爬虫</span>
-                    </div>
-                </div>
+                <!--<div class="list1 list" @click="gotopachong">-->
+                    <!--<div class="word"><i class="ymq-iconbug1" style=" font-size: 60px;"></i></div>-->
+                    <!--<div class="word2">-->
+                        <!--<span>数据爬虫</span>-->
+                    <!--</div>-->
+                <!--</div>-->
                 <div class="list2 list" @click="gotoData">
                     <div class="word"><i class="ymq-iconshujuwajue" style=" font-size: 60px;"></i></div>
                     <div class="word2">
                         <span>数据清洗</span>
                     </div>
                 </div>
-                <div class="list3 list">
+                <div class="list3 list" @click="TextClassification">
                     <div class="word"><i class="ymq-iconliebiao" style=" font-size: 60px;"></i></div>
                     <div class="word2">
                         <span>文本分类</span>
@@ -74,12 +74,12 @@
                         <span>数据可视化</span>
                     </div>
                 </div>
-                <div class="list7 lists" @click="gotojishu">
-                    <div class="word"><i class="ymq-iconsever" style=" font-size: 60px;"></i></div>
-                    <div class="word2">
-                        <span>技术工程库</span>
-                    </div>
-                </div>
+                <!--<div class="list7 lists" @click="gotojishu">-->
+                    <!--<div class="word"><i class="ymq-iconsever" style=" font-size: 60px;"></i></div>-->
+                    <!--<div class="word2">-->
+                        <!--<span>技术工程库</span>-->
+                    <!--</div>-->
+                <!--</div>-->
                 <div class="list8 lists" @click="gotosuanfa">
                     <div class="word"><i class="ymq-iconcontainer-fill" style=" font-size: 60px;"></i></div>
                     <div class="word2">
@@ -120,6 +120,14 @@
                 window.open(href, '_blank')
                 localStorage.setItem('flag', this.strflag)
             },
+            TextClassification () {
+                this.strflag = '文本分类'
+                const {href} = this.$router.resolve({
+                    path: `/TextClassification`
+                })
+                window.open(href, '_blank')
+                localStorage.setItem('flag', this.strflag)
+            },
             gotovisualization () {
                 this.strflag = '数据可视化'
                 const {href} = this.$router.resolve({
@@ -133,8 +141,12 @@
                 window.open(href, '_blank')
             },
             gotoChineseParticiples() {
-                var href = 'http://114.242.223.253:8080/SSMLibrary/literatureupload.jsp'
+                this.strflag = '知识发现'
+                const {href} = this.$router.resolve({
+                    path: `/KnowDiscovery`
+                })
                 window.open(href, '_blank')
+                localStorage.setItem('flag', this.strflag)
             },
             gotojishu () {
                 var url = 'http://www.zhongkeruitong.top/pel/pel/index.html'

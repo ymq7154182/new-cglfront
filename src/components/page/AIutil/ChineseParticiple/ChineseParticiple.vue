@@ -650,103 +650,103 @@
                 this.color = '#91A5FE'
             },
             Standard () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/StandardTokenizerSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/StandardTokenizerSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textareapage1 = res.data.segment
                 })
             },
             NLP () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/NLPTokenizerSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/NLPTokenizerSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textareapage2 = res.data.segment
                 })
             },
             Index () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/IndexTokenizerSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/IndexTokenizerSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textareapage3 = res.data.segment
                 })
             },
             nShortSegment () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/nShortSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/nShortSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textareapage4 = res.data.segment
                 })
             },
             shortSegment () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/shortSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/shortSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textareapage5 = res.data.segment
                 })
             },
             SpeedTokenizerSegment () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/SpeedTokenizerSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/SpeedTokenizerSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textareapage6 = res.data.segment
                 })
             },
             StandardTokenizerSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/StandardTokenizerSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/StandardTokenizerSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareastand = res.data.segment
                     this.color1 = '#FD694E'
                 })
             },
             NLPTokenizerSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/NLPTokenizerSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/NLPTokenizerSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaNLP = res.data.segment
                     this.color2 = '#EEAC39'
                 })
             },
             IndexTokenizerSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/IndexTokenizerSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/IndexTokenizerSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaIndex = res.data.segment
                     this.color3 = '#4DC9FE'
                 })
             },
             nShortSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/nShortSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/nShortSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareanShort = res.data.segment
                     this.color4 = '#E9D602'
                 })
             },
             shortSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/shortSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/shortSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareashort = res.data.segment
                     this.color5 = '#EEAC39'
                 })
             },
             SpeedTokenizerSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/SpeedTokenizerSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/SpeedTokenizerSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaSpeed = res.data.segment
                     this.color6 = '#91A5FE'
                 })
             },
             DicAnalysisSegment () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/DicAnalysisSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/DicAnalysisSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textareapage7 = res.data.segment.terms
                 })
             },
             ToAnalysisSegment () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/ToAnalysisSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/ToAnalysisSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textareapage8 = res.data.segment.terms
                 })
             },
             IndexAnalysisSegment () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/IndexAnalysisSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/IndexAnalysisSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textareapage9 = res.data.segment.terms
                 })
             },
             NlpAnalysisSegment () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/NlpAnalysisSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/NlpAnalysisSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textareapage10 = res.data.segment.terms
                 })
@@ -768,35 +768,35 @@
                 this.color = '#5A58D6'
             },
             DicAnalysisSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/DicAnalysisSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/DicAnalysisSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaDicAnalysisSegment = res.data.segment.terms
                     this.color7 = '#FD694E'
                 })
             },
             ToAnalysisSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/ToAnalysisSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/ToAnalysisSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaToAnalysisSegment = res.data.segment.terms
                     this.color8 = '#4DC9FE'
                 })
             },
             IndexAnalysisSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/IndexAnalysisSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/IndexAnalysisSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaIndexAnalysisSegment = res.data.segment.terms
                     this.color9 = '#EEAC39'
                 })
             },
             NlpAnalysisSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/NlpAnalysisSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/NlpAnalysisSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaNlpAnalysisSegment = res.data.segment.terms
                     this.color10 = '#5A58D6'
                 })
             },
             sentenceProcess () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/sentenceProcess?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/sentenceProcess?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textareapage11 = res.data.segment
                 })
@@ -806,14 +806,14 @@
                 this.color = '#FD694E'
             },
             sentenceProcessDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/sentenceProcessDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/sentenceProcessDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareasentenceProcess = res.data.segment
                     this.color11 = '#FD694E'
                 })
             },
             ThulacSegment () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/ThulacSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/ThulacSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textareapage12 = res.data.segment
                 })
@@ -823,44 +823,44 @@
                 this.color = '#FD694E'
             },
             ThulacSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/ThulacSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/ThulacSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaThulacSegment = res.data.segment
                     this.color12 = '#FD694E'
                 })
             },
             MaximumMatchingSegment () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/MaximumMatchingSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/MaximumMatchingSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textareapage13 = res.data.segment
                 })
             },
             ReverseMaximumMatchingSegment () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/ReverseMaximumMatchingSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/ReverseMaximumMatchingSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textareapage14 = res.data.segment
                 })
             },
             MinimumMatchingSegment () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/MinimumMatchingSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/MinimumMatchingSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textareapage15 = res.data.segment
                 })
             },
             ReverseMinimumMatchingSegment () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/ReverseMinimumMatchingSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/ReverseMinimumMatchingSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textareapage16 = res.data.segment
                 })
             },
             BidirectionalMaximumMatchingSegment () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/BidirectionalMaximumMatchingSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/BidirectionalMaximumMatchingSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textareapage17 = res.data.segment
                 })
             },
             BidirectionalMinimumMatchingSegment () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/BidirectionalMinimumMatchingSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/BidirectionalMinimumMatchingSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textareapage18 = res.data.segment
                 })
@@ -890,42 +890,42 @@
                 this.color = '#90A5FD'
             },
             MaximumMatchingSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/MaximumMatchingSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/MaximumMatchingSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaMaximumMatchingSegment = res.data.segment
                     this.color13 = '#FD694E'
                 })
             },
             ReverseMaximumMatchingSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/ReverseMaximumMatchingSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/ReverseMaximumMatchingSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaReverseMaximumMatchingSegment = res.data.segment
                     this.color14 = '#5A58D6'
                 })
             },
             MinimumMatchingSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/MinimumMatchingSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/MinimumMatchingSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaMinimumMatchingSegment = res.data.segment
                     this.color15 = '#4DC9FE'
                 })
             },
             ReverseMinimumMatchingSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/ReverseMinimumMatchingSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/ReverseMinimumMatchingSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareanReverseMinimumMatchingSegment = res.data.segment
                     this.color16 = '#E9D602'
                 })
             },
             BidirectionalMaximumMatchingSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/BidirectionalMaximumMatchingSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/BidirectionalMaximumMatchingSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaBidirectionalMaximumMatchingSegment = res.data.segment
                     this.color17 = '#90A5FD'
                 })
             },
             BidirectionalMinimumMatchingSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/BidirectionalMinimumMatchingSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/BidirectionalMinimumMatchingSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaBidirectionalMinimumMatchingSegment = res.data.segment
                     this.color18 = '#EEAC39'

@@ -16,7 +16,7 @@
         <span>关于我们</span>
         <ul>
           <li><a href="#">发展历程</a></li>
-          <li><a href="#">了解我们</a></li>
+          <li><a @click="gotoaboutus">了解我们</a></li>
           <li><a href="#">联系我们</a></li>
         </ul>
       </div>
@@ -53,7 +53,12 @@
 
 <script>
 export default {
-  name: 'Footer'
+  name: 'Footer',
+    methods: {
+        gotoaboutus () {
+            this.$router.push('/AboutUs')
+        }
+    }
 }
 </script>
 

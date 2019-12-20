@@ -96,7 +96,7 @@
             NlpAnalysisSegment () {
                 this.shengwuflag2 = 0
                 this.textarea1 = localStorage.getItem('text')
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/NlpAnalysisSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/NlpAnalysisSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textarea2 = res.data.segment.terms
                     this.color = '#FD694E'
@@ -106,7 +106,7 @@
             ThulacSegment () {
                 this.shengwuflag = 0
                 this.textarea1 = localStorage.getItem('text')
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/ThulacSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/ThulacSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textarea2 = res.data.segment
                     this.color = '#EEAC39'
@@ -116,7 +116,7 @@
             page2 () {
                 this.shengwuflag2 = 0
                 this.textarea1 = localStorage.getItem('text')
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/NlpAnalysisSegment?sentence=' + this.textarea1
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/NlpAnalysisSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textarea2 = res.data.segment.terms
                     this.color = '#4DC9FE'
@@ -124,14 +124,14 @@
                 })
             },
             NlpAnalysisSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/NlpAnalysisSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/NlpAnalysisSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaNlpAnalysisSegment = res.data.segment.terms
                     this.color1 = '#FD694E'
                 })
             },
             ThulacSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/show/AIPlatform/ThulacSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/ThulacSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaThulacSegment = res.data.segment
                     this.color2 = '#EEAC39'

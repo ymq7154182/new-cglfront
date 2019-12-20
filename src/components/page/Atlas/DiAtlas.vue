@@ -131,14 +131,14 @@
         name: "DiAtlas",
         data () {
             return {
-                url: 'http://zhongkeruitong.top/show/bd58939dafd244159f27f7270479f2231569063522528.jpg',
-                srcList: ['http://zhongkeruitong.top/show/bd58939dafd244159f27f7270479f2231569063522528.jpg'],
-                url2: 'http://zhongkeruitong.top/show/371ff0b6f54e41088fe3db50506740a41569063726577.jpg',
-                srcList2: ['http://zhongkeruitong.top/show/371ff0b6f54e41088fe3db50506740a41569063726577.jpg'],
-                url3: 'http://zhongkeruitong.top/show/821a32b39ac64dc5a37c2d65c0a60e8c1569063814398.jpg',
-                srcList3: ['http://zhongkeruitong.top/show/821a32b39ac64dc5a37c2d65c0a60e8c1569063814398.jpg'],
-                url4: 'http://zhongkeruitong.top/show/784f8925a79049e8bf6958f316efecd51569064782441.jpg',
-                srcList4: ['http://zhongkeruitong.top/show/784f8925a79049e8bf6958f316efecd51569064782441.jpg']
+                url: 'http://zhongkeruitong.top/AIshow/bd58939dafd244159f27f7270479f2231569063522528.jpg',
+                srcList: ['http://zhongkeruitong.top/AIshow/bd58939dafd244159f27f7270479f2231569063522528.jpg'],
+                url2: 'http://zhongkeruitong.top/AIshow/371ff0b6f54e41088fe3db50506740a41569063726577.jpg',
+                srcList2: ['http://zhongkeruitong.top/AIshow/371ff0b6f54e41088fe3db50506740a41569063726577.jpg'],
+                url3: 'http://zhongkeruitong.top/AIshow/821a32b39ac64dc5a37c2d65c0a60e8c1569063814398.jpg',
+                srcList3: ['http://zhongkeruitong.top/AIshow/821a32b39ac64dc5a37c2d65c0a60e8c1569063814398.jpg'],
+                url4: 'http://zhongkeruitong.top/AIshow/784f8925a79049e8bf6958f316efecd51569064782441.jpg',
+                srcList4: ['http://zhongkeruitong.top/AIshow/784f8925a79049e8bf6958f316efecd51569064782441.jpg']
             }
         }
     }
