@@ -4,7 +4,7 @@
             <span>分词</span>
         </div>
         <div style="width: 800px;margin: 40px auto">
-            <el-select v-model="value1" placeholder="请选择输入方式" class="selceted">
+            <el-select v-model="value1" placeholder="选择输入方式" class="selceted">
                 <el-option
                     v-for="item in options1"
                     :key="item.value"
@@ -30,8 +30,8 @@
             </el-select>
         </div>
         <div style="width: 1000px;margin: 40px auto">
-            <div v-if="value1==='导入文件'">
-                <el-button type="primary" @click="show_import">导入文件</el-button>
+            <div>
+                <el-button type="primary" @click="show_import" v-if="value1==='导入文件'">导入文件</el-button>
                 <el-dialog
                     title="提示"
                     :visible.sync="dialogVisible1"
@@ -110,8 +110,8 @@
                 value3: '',
                 textarea2: '母亲，对于任何人来说，都是那么神圣，那么亲切。我知道祖国是我们的伟大母亲，因为我们每个人的生命、欢乐和幸福都与祖国母亲的安危息息相关，紧密相连，我感到身在祖国温暖的怀抱中是多么的骄傲',
                 options1: [{
-                    value: '请输入内容',
-                    label: '请输入内容'
+                    value: '输入内容',
+                    label: '输入内容'
                 },{
                     value: '导入文件',
                     label: '导入文件'
@@ -223,7 +223,7 @@
                 }
             },
             button_starts () {
-                if (this.value1 === '请输入内容') {
+                if (this.value1 === '输入内容') {
                     this.getdata()
                 } else if (this.value1 === '导入文件') {
                     this.show_result = true

@@ -17,9 +17,9 @@
         </div>
         <div style="margin: 0 auto;max-width: 1500px">
             <div class="box">
-                <div class="head">
-                    产学结合模式
-                </div>
+                <!--<div class="head">-->
+                    <!--产学结合模式-->
+                <!--</div>-->
                 <hr class="box_line"/>
                 <div class="box_text">
                     <p>

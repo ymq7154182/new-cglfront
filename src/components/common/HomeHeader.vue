@@ -2,7 +2,7 @@
     <div class="shortcut" >
         <div class="w">
             <div class="fl">
-                <img src="../../assets/0999999998.png" height="90">
+                <img src="../../assets/0999999998.png" height="90" @click="goBackHome">
                 <!--<div style="color: #398A86;line-height: 40px;text-align: center">知识图谱与智能化应用平台</div>-->
             </div>
             <div style="line-height: 90px">
@@ -21,9 +21,9 @@
 
                     </li>
                     <li><el-dropdown>
-                        <a href="#">精准检索</a>
+                        <a href="#" @click="gotojingzhun">精准检索</a>
                         <el-dropdown-menu slot="dropdown"  class="dropdown">
-                            <el-dropdown-item class="menutext">智慧推荐</el-dropdown-item>
+                            <el-dropdown-item class="menutext" @click.native="gotojingzhun">智慧推荐</el-dropdown-item>
                         </el-dropdown-menu>
                     </el-dropdown></li>
                     <li>
@@ -501,6 +501,15 @@
                     localStorage.setItem('flag', this.strflag)
                 }
             },
+            gotojingzhun () {
+                if (this.flaglogin === false) {
+                    alert('请先登录！')
+                    this.dialogVisible = true
+                } else {
+                    var url = 'http://114.242.223.253:8080/professor/#/'
+                    window.open(url, '_blank')
+                }
+            },
             gotodzzhusou2 () {
                 if (this.flaglogin === false) {
                     alert('请先登录！')
@@ -641,7 +650,10 @@
     }
     .fl { /*浮动的公共类*/
         float: left;
-        margin-left: 8%;
+        margin-left: 7%;
+    }
+    .fl img:hover {
+        cursor: pointer;
     }
     .fr {
         float: right;
