@@ -139,22 +139,22 @@
         name: "AtlasGN",
         data () {
             return {
-                url: 'http://zhongkeruitong.top/AIshow/67cb1c76f649455189d337e26e1044651569042531620.jpg',
+                url: 'http://114.242.223.253/67cb1c76f649455189d337e26e1044651569042531620.jpg',
                 srcList: [
-                    'http://zhongkeruitong.top/AIshow/67cb1c76f649455189d337e26e1044651569042531620.jpg',
+                    'http://114.242.223.253/67cb1c76f649455189d337e26e1044651569042531620.jpg',
                 ],
-                url1: 'http://zhongkeruitong.top/AIshow/73d1263b6ea74f788ab6b0f83f034f191569042929347.jpg',
-                srcList1: ['http://zhongkeruitong.top/AIshow/73d1263b6ea74f788ab6b0f83f034f191569042929347.jpg'],
-                url2: 'http://zhongkeruitong.top/AIshow/a5d35d3556c54f818f5be433bcef780e1569043588835.jpg',
-                srcList2: ['http://zhongkeruitong.top/AIshow/a5d35d3556c54f818f5be433bcef780e1569043588835.jpg'],
-                url3: 'http://zhongkeruitong.top/AIshow/28a7dc23769f4df5803b4187164d179a1569043776374.jpg',
-                srcList3: ['http://zhongkeruitong.top/AIshow/28a7dc23769f4df5803b4187164d179a1569043776374.jpg'],
-                url4: 'http://zhongkeruitong.top/AIshow/83964ce8de184f63a0cbeebae0b059551569043899964.jpg',
-                srcList4: ['http://zhongkeruitong.top/AIshow/83964ce8de184f63a0cbeebae0b059551569043899964.jpg'],
-                url5: 'http://zhongkeruitong.top/AIshow/75c5117abda9461e854aaea2021cc1ce1569044010531.jpg',
-                srcList5: ['http://zhongkeruitong.top/AIshow/75c5117abda9461e854aaea2021cc1ce1569044010531.jpg'],
-                url6: 'http://zhongkeruitong.top/AIshow/30ea2972293944a9a0d28e48b742c1811569044162603.jpg',
-                srcList6: ['http://zhongkeruitong.top/AIshow/30ea2972293944a9a0d28e48b742c1811569044162603.jpg']
+                url1: 'http://114.242.223.253/73d1263b6ea74f788ab6b0f83f034f191569042929347.jpg',
+                srcList1: ['http://114.242.223.253/73d1263b6ea74f788ab6b0f83f034f191569042929347.jpg'],
+                url2: 'http://114.242.223.253/a5d35d3556c54f818f5be433bcef780e1569043588835.jpg',
+                srcList2: ['http://114.242.223.253/a5d35d3556c54f818f5be433bcef780e1569043588835.jpg'],
+                url3: 'http://114.242.223.253/28a7dc23769f4df5803b4187164d179a1569043776374.jpg',
+                srcList3: ['http://114.242.223.253/28a7dc23769f4df5803b4187164d179a1569043776374.jpg'],
+                url4: 'http://114.242.223.253/83964ce8de184f63a0cbeebae0b059551569043899964.jpg',
+                srcList4: ['http://114.242.223.253/83964ce8de184f63a0cbeebae0b059551569043899964.jpg'],
+                url5: 'http://114.242.223.253/75c5117abda9461e854aaea2021cc1ce1569044010531.jpg',
+                srcList5: ['http://114.242.223.253/75c5117abda9461e854aaea2021cc1ce1569044010531.jpg'],
+                url6: 'http://114.242.223.253/30ea2972293944a9a0d28e48b742c1811569044162603.jpg',
+                srcList6: ['http://114.242.223.253/30ea2972293944a9a0d28e48b742c1811569044162603.jpg']
 
             }
         }

@@ -62,7 +62,7 @@
                     spinner: 'el-icon-loading',
                     background: 'rgba(0, 0, 0, 0.7)'
                 });
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/findHot?entity=' + this.word
+                var url = 'http://ailab.sdu.edu.cn:80/findHot?entity=' + this.word
                 this.$axios.post(url).then((res) => {
                     this.dataList = res.data.info
                     loading.close()

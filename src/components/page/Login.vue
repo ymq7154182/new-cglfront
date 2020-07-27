@@ -44,7 +44,7 @@
             submitForm(formName) {
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
-                        var url = 'http://zhongkeruitong.top/canteen-system/user/login?username=' + this.ruleForm.username + '&password=' + this.ruleForm.password
+                        var url = 'http://114.242.223.253/canteen-system/user/login?username=' + this.ruleForm.username + '&password=' + this.ruleForm.password
                         this.$axios.get(url).then((res) => {
                             if (res.data.errmsg === '登录成功!') {
                                 this.$message.success(res.data.errmsg);

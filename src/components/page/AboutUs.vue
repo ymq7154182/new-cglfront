@@ -51,21 +51,21 @@
             <!--<img src="../../assets/tuandui_2.jpg">-->
             <div class="details_right">
                 <!--<div style="width:70%;margin-left: 58px;background-color: rgba(0, 0, 0, 0.2);height: 1px;margin-top: 30px"></div>-->
-                <p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">李学庆</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;教  授/首席专家/博士生导师<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">王永吉</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二级研究员/博士生导师<br/>
+                <p style="margin-top: 100px">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">李学庆</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;教  授/首席专家，软件工程、教育技术、智能人机交互<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">付立军</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;研究员/实验室主任，数据分析、知识图谱<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<span class="name_style">王永吉</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二级研究员/特聘专家，实时系统、网络技术、人工智能<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">刘&nbsp;&nbsp;&nbsp;&nbsp;峰</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;研究员/特聘专家，物联网，智能制造<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">常志军</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;副研究员/实验室副主任，大数据技术<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">刘&nbsp;&nbsp;&nbsp;&nbsp;锦</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;副教授,计算机视觉、医学影像<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">杨&nbsp;&nbsp;&nbsp;&nbsp;威</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;副教授，信息安全，物联网<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">李&nbsp;&nbsp;&nbsp;&nbsp;响</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高级工程师，知识图谱、智能问答<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">陆&nbsp;&nbsp;&nbsp;&nbsp;明</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高级工程师，资深架构师，大数据、云计算方向<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">武靖恺</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高级工程师，智慧城市深度信息化资深产品专家<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">韩&nbsp;&nbsp;&nbsp;&nbsp;晋</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高级工程师，物联网领域资深产业专家<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">胡晓峰</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高级工程师，数据分析，信息安全<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">常志军</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;副研究员，大数据技术<br/>
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">刘&nbsp;&nbsp;&nbsp;&nbsp;锦</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;副教授,计算机视觉、医学影像<br/>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">杨&nbsp;&nbsp;&nbsp;&nbsp;威</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;副教授，信息安全，物联网<br/>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">李&nbsp;&nbsp;&nbsp;&nbsp;响</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高级工程师，知识图谱、智能问答<br/>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">陆&nbsp;&nbsp;&nbsp;&nbsp;明</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高级工程师，资深架构师，大数据、云计算方向<br/>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">武靖恺</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高级工程师，智慧城市深度信息化资深产品专家<br/>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">韩&nbsp;&nbsp;&nbsp;&nbsp;晋</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高级工程师，物联网领域资深产业专家<br/>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">胡晓峰</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高级工程师，数据分析，信息安全<br/>-->
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">安梦飞</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高级工程师，知识图谱、金融风险研究<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">张善禹</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;科研助理/对外合作主管<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">展&nbsp;&nbsp;&nbsp;&nbsp;鹏</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工程师，软件工程、人工智能<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name_style">以及博士硕士研究生，形成了科研、产业及实施团队30余人</span><br/>
                 </p>
             </div>
@@ -96,6 +96,36 @@
 
             <!--<div>-->
                 <!--<img src="../../assets/table.png">-->
+            <!--</div>-->
+        </div>
+        <div class="direction">
+            <div class="word_text">
+                <span>产学研共赢合作</span>
+            </div>
+            <div style="width:70%;margin: 20px auto;background-color: rgba(0, 0, 0, 0.2);height: 1px;"></div>
+            <div style="margin-top: 40px">
+                <div  style="width: 5%;height: 100%;float: left">
+                    <img src="../../assets/chanxue.jpg" style="height: 250px;margin-left: 250px;filter: blur(0.6px)">
+                </div>
+                <div style="width: 50%;height: 100%;float: right">
+                    <div  style="width: 60%;float: left;margin-left: 50px;">
+                        <p style="line-height: 25px">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>宗旨：整合多方资源 创建共赢平台</span><br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;实验室聚焦数据科学与智能化技术融合，面向产业信息化发展前沿，服务于行业合作伙伴智能化的发展与提升。在行业合作实践过程中，把前沿科技研发与产品市场化落地相结合，在科技咨询、技术研发与AI服务、高端教育培训与方向，形成可持续的共赢合作平台。<br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过委托项目、科技攻关、联合项目研发、联合应用实验室或研究中心、研究生基地等合作方式，联合推进如教育AI、医养大健康、金融科技、文情图谱、智能制造、智慧城市等领域与方向。<br/>
+                        </p>
+                    </div>
+                    <!--<img src="../../assets/tupian1.png" style="width: 80%;margin-left: 40px">-->
+                </div>
+            </div>
+
+            <!--<div style="position: absolute;height: 600px;width: 100%;background-color: rgba(0, 0, 0, 0.3);">-->
+            <!---->
+            <!--</div>-->
+
+
+            <!--<div>-->
+            <!--<img src="../../assets/table.png">-->
             <!--</div>-->
         </div>
         <div style="background-color: #333333">

@@ -100,7 +100,7 @@
         methods: {
             Standard1 () {
                 this.textarea1 = localStorage.getItem('text')
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/StandardTokenizerSegment?sentence=' + this.textarea1
+                var url = 'http://ailab.sdu.edu.cn:80/StandardTokenizerSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textarea2 = res.data.segment
                     this.color = '#FD694E'
@@ -108,7 +108,7 @@
             },
             NLP1 () {
                 this.textarea1 = localStorage.getItem('text')
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/NLPTokenizerSegment?sentence=' + this.textarea1
+                var url = 'http://ailab.sdu.edu.cn:80/NLPTokenizerSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textarea2 = res.data.segment
                     this.color = '#EEAC39'
@@ -116,28 +116,28 @@
             },
             Index1 () {
                 this.textarea1 = localStorage.getItem('text')
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/IndexTokenizerSegment?sentence=' + this.textarea1
+                var url = 'http://ailab.sdu.edu.cn:80/IndexTokenizerSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textarea2 = res.data.segment
                     this.color = '#4DC9FE'
                 })
             },
             StandardTokenizerSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/StandardTokenizerSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://ailab.sdu.edu.cn:80/StandardTokenizerSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareastand = res.data.segment
                     this.color1 = '#FD694E'
                 })
             },
             NLPTokenizerSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/NLPTokenizerSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://ailab.sdu.edu.cn:80/NLPTokenizerSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaNLP = res.data.segment
                     this.color2 = '#EEAC39'
                 })
             },
             IndexTokenizerSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/IndexTokenizerSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://ailab.sdu.edu.cn:80/IndexTokenizerSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaIndex = res.data.segment
                     this.color3 = '#4DC9FE'

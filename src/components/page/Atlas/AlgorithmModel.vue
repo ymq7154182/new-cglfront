@@ -144,16 +144,16 @@
         name: "AlgorithmModel",
         data () {
             return {
-                url: 'http://zhongkeruitong.top/AIshow/caa952e9922845178f72501bff9eb3c61569044535382.jpg',
-                srcList: ['http://zhongkeruitong.top/AIshow/caa952e9922845178f72501bff9eb3c61569044535382.jpg'],
-                url1: 'http://zhongkeruitong.top/AIshow/bd66bc27e77b4074becc0a1b1847c7761569044814381.jpg',
-                srcList1: ['http://zhongkeruitong.top/AIshow/bd66bc27e77b4074becc0a1b1847c7761569044814381.jpg'],
-                url2: 'http://zhongkeruitong.top/AIshow/de4446f5ba2145abbcdbd4e218ff82bf1569044894672.jpg',
-                srcList2: ['http://zhongkeruitong.top/AIshow/de4446f5ba2145abbcdbd4e218ff82bf1569044894672.jpg'],
-                url3: 'http://zhongkeruitong.top/AIshow/6d2af648d1664ea39970c2ad499535081569045622417.jpg',
-                srcList3: ['http://zhongkeruitong.top/AIshow/6d2af648d1664ea39970c2ad499535081569045622417.jpg'],
-                url4: 'http://zhongkeruitong.top/AIshow/3606fc22f4f94bbbbb9b2c62cf1d901b1569046135378.jpg',
-                srcList4: ['http://zhongkeruitong.top/AIshow/3606fc22f4f94bbbbb9b2c62cf1d901b1569046135378.jpg']
+                url: 'http://114.242.223.253/caa952e9922845178f72501bff9eb3c61569044535382.jpg',
+                srcList: ['http://114.242.223.253/caa952e9922845178f72501bff9eb3c61569044535382.jpg'],
+                url1: 'http://114.242.223.253/bd66bc27e77b4074becc0a1b1847c7761569044814381.jpg',
+                srcList1: ['http://114.242.223.253/bd66bc27e77b4074becc0a1b1847c7761569044814381.jpg'],
+                url2: 'http://114.242.223.253/de4446f5ba2145abbcdbd4e218ff82bf1569044894672.jpg',
+                srcList2: ['http://114.242.223.253/de4446f5ba2145abbcdbd4e218ff82bf1569044894672.jpg'],
+                url3: 'http://114.242.223.253/6d2af648d1664ea39970c2ad499535081569045622417.jpg',
+                srcList3: ['http://114.242.223.253/6d2af648d1664ea39970c2ad499535081569045622417.jpg'],
+                url4: 'http://114.242.223.253/3606fc22f4f94bbbbb9b2c62cf1d901b1569046135378.jpg',
+                srcList4: ['http://114.242.223.253/3606fc22f4f94bbbbb9b2c62cf1d901b1569046135378.jpg']
 
             }
         }

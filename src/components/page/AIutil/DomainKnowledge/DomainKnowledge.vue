@@ -49,6 +49,9 @@
                 word: '金矿'
             }
         },
+        mounted () {
+          this.getData()
+        },
         methods: {
             init () {
                 var mychart = this.$echarts.init(document.getElementById('chart'))
@@ -142,7 +145,7 @@
                 mychart.setOption(option);
             },
             getData () {
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/atalsInquire'
+                var url = 'http://ailab.sdu.edu.cn:80/atalsInquire'
                 this.$axios.post(url, this.$qs.stringify({
                     entity: this.word
                 })).then((res) => {

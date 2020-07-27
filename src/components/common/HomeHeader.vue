@@ -1,200 +1,204 @@
 <template>
     <div class="shortcut" >
         <div class="w">
-            <div class="fl">
-                <img src="../../assets/0999999998.png" height="90" @click="goBackHome">
-                <!--<div style="color: #398A86;line-height: 40px;text-align: center">知识图谱与智能化应用平台</div>-->
-            </div>
-            <div style="line-height: 90px">
-                <ul class="fr">
-                    <li>
-                        <a href="#" @click="goBackHome">首页</a>
-                    </li>
-                    <li>
-                        <el-dropdown>
-                            <a href="#" @click="gotoAtlas">知识图谱</a>
-                            <el-dropdown-menu slot="dropdown"  class="dropdown">
-                                <el-dropdown-item class="menutext" @click.native="gotoAtlas">垂直图谱</el-dropdown-item>
-                                <el-dropdown-item class="menutext" @click.native="gotolinyu">领域知识库</el-dropdown-item>
-                            </el-dropdown-menu>
-                        </el-dropdown>
+            <div style="width: 1400px;margin: 0 auto">
+                <div class="fl" @click="goBackHome">
+                    <img src="../../assets/shanda.png" height="70" style="margin-bottom: 9px">
+                    <img src="../../assets/0999999998.png" height="90" >
+                    <!--<div style="color: #398A86;line-height: 40px;text-align: center">知识图谱与智能化应用平台</div>-->
+                </div>
+                <div style="line-height: 90px">
+                    <ul class="fr">
+                        <li>
+                            <a href="#" @click="goBackHome">首页</a>
+                        </li>
+                        <li>
+                            <el-dropdown>
+                                <a href="#" @click="gotoAtlas">知识图谱</a>
+                                <el-dropdown-menu slot="dropdown"  class="dropdown">
+                                    <el-dropdown-item class="menutext" @click.native="gotoAtlas">垂直图谱</el-dropdown-item>
+                                    <el-dropdown-item class="menutext" @click.native="gotolinyu">领域知识库</el-dropdown-item>
+                                </el-dropdown-menu>
+                            </el-dropdown>
 
-                    </li>
-                    <li><el-dropdown>
-                        <a href="#" @click="gotojingzhun">精准检索</a>
-                        <el-dropdown-menu slot="dropdown"  class="dropdown">
-                            <el-dropdown-item class="menutext" @click.native="gotojingzhun">智慧推荐</el-dropdown-item>
-                        </el-dropdown-menu>
-                    </el-dropdown></li>
-                    <li>
-                        <el-dropdown>
-                            <a href="#" @click="gotodzzhusou">智能问答</a>
+                        </li>
+                        <li><el-dropdown>
+                            <a href="#" @click="gotojingzhun">精准检索</a>
                             <el-dropdown-menu slot="dropdown"  class="dropdown">
-                                <el-dropdown-item class="menutext" @click.native="gotodzzhusou2">地质小助手</el-dropdown-item>
-                                <el-dropdown-item class="menutext" @click.native="gotodzRobot">地质问答机器人</el-dropdown-item>
-                                <el-dropdown-item class="menutext" @click.native="QA">医疗问答机器人</el-dropdown-item>
+                                <el-dropdown-item class="menutext" @click.native="gotojingzhun">智慧推荐</el-dropdown-item>
                             </el-dropdown-menu>
-                        </el-dropdown>
-                    </li>
-                    <li><a href="#" @click="gotoHotPoint">热点预测</a></li>
-                    <li>
-                        <el-dropdown>
-                            <a href="#" @click="gotoAIuilt">
-                                智能工具
-                            </a>
-                            <el-dropdown-menu slot="dropdown"  class="dropdown">
-                                <!--<el-dropdown-item class="menutext" @click.native="gotoPachong">数据爬虫</el-dropdown-item>-->
-                                <el-dropdown-item class="menutext" @click.native="gotoDataClear">数据处理</el-dropdown-item>
-                                <el-dropdown-item class="menutext" @click.native="TextClassification">文本分类</el-dropdown-item>
-                                <el-dropdown-item class="menutext" @click.native="gotoChineseParticple">中文分词</el-dropdown-item>
-                                <el-dropdown-item class="menutext" @click.native="gotoChineseParticiples">知识发现</el-dropdown-item>
-                                <el-dropdown-item class="menutext" @click.native="gotovisualization">数据可视化</el-dropdown-item>
-                                <!--<el-dropdown-item class="menutext" @click.native="gotojishu">技术工程库</el-dropdown-item>-->
-                                <el-dropdown-item class="menutext" @click.native="gotosuanfa">算法库</el-dropdown-item>
-                            </el-dropdown-menu>
-                        </el-dropdown>
+                        </el-dropdown></li>
+                        <li>
+                            <el-dropdown>
+                                <a href="#" @click="gotodzzhusou">智能问答</a>
+                                <el-dropdown-menu slot="dropdown"  class="dropdown">
+                                    <el-dropdown-item class="menutext" @click.native="gotodzzhusou2">地质小助手</el-dropdown-item>
+                                    <el-dropdown-item class="menutext" @click.native="gotodzRobot">地质问答机器人</el-dropdown-item>
+                                    <el-dropdown-item class="menutext" @click.native="QA">医疗问答机器人</el-dropdown-item>
+                                </el-dropdown-menu>
+                            </el-dropdown>
+                        </li>
+                        <li><a href="#" @click="gotoHotPoint">热点预测</a></li>
+                        <li>
+                            <el-dropdown>
+                                <a href="#" @click="gotoAIuilt">
+                                    智能工具
+                                </a>
+                                <el-dropdown-menu slot="dropdown"  class="dropdown">
+                                    <!--<el-dropdown-item class="menutext" @click.native="gotoPachong">数据爬虫</el-dropdown-item>-->
+                                    <el-dropdown-item class="menutext" @click.native="gotoDataClear">数据处理</el-dropdown-item>
+                                    <el-dropdown-item class="menutext" @click.native="TextClassification">文本分类</el-dropdown-item>
+                                    <el-dropdown-item class="menutext" @click.native="gotoChineseParticple">中文分词</el-dropdown-item>
+                                    <el-dropdown-item class="menutext" @click.native="gotoChineseParticiples">知识发现</el-dropdown-item>
+                                    <el-dropdown-item class="menutext" @click.native="gotovisualization">数据可视化</el-dropdown-item>
+                                    <!--<el-dropdown-item class="menutext" @click.native="gotojishu">技术工程库</el-dropdown-item>-->
+                                    <el-dropdown-item class="menutext" @click.native="gotosuanfa">算法库</el-dropdown-item>
+                                </el-dropdown-menu>
+                            </el-dropdown>
 
-                    </li>
-                    <li>
-                        <a class="hover_a" @click="Ke_Jiao">科教融合</a>
-                    </li>
-                    <li>
-                        <a class="hover_a" @click="about_us">关于我们</a>
-                    </li>
+                        </li>
+                        <li>
+                            <a class="hover_a" @click="Ke_Jiao">科教融合</a>
+                        </li>
+                        <li>
+                            <a class="hover_a" @click="about_us">关于我们</a>
+                        </li>
 
-                    <li>
-                        <a href="#" @click="loginpre" v-if="flagimg">注册/登录</a>
-                        <el-avatar :size="40" :src="circleUrl" v-if="flagimg===0" style="margin-top: 20px"></el-avatar>
-                        <div v-if="flagimg===0" style="float: right;margin-left: 20px;">
-                            <el-dropdown  trigger="click" @command="handleCommand" style="height: 50px">
+                        <li>
+                            <a href="#" @click="loginpre" v-if="flagimg">注册/登录</a>
+                            <el-avatar :size="40" :src="circleUrl" v-if="flagimg===0" style="margin-top: 20px"></el-avatar>
+                            <div v-if="flagimg===0" style="float: right;margin-left: 20px;">
+                                <el-dropdown  trigger="click" @command="handleCommand" style="height: 50px">
                             <span class="el-dropdown-link">
                                 {{username}}<i class="el-icon-arrow-down el-icon--right"></i>
                             </span>
-                                <el-dropdown-menu slot="dropdown">
-                                    <el-dropdown-item command="set">设置</el-dropdown-item>
-                                    <el-dropdown-item command="out">退出登录</el-dropdown-item>
-                                </el-dropdown-menu>
-                            </el-dropdown>
-                        </div>
-                        <el-dialog
-                            :visible.sync="dialogVisible"
-                            :fullscreen="fullscreen" class="dialog"
-                            :before-close="handleClose">
-                            <Particles></Particles>
-                            <transition name="formlogins">
-                                <div class="login" v-if="show1">
-                                    <div class="wordlogin"><span>登录</span></div>
-                                    <div style="width: 100%">
-                                        <div class="loginform">
-                                            <el-row>
-                                                <el-col :span="4">
-                                                    <i class="ymq-iconuser formicon"></i>
-                                                </el-col>
-                                                <el-col :span="20">
-                                                    <el-input  placeholder="用户名" class="forminput" v-model="ruleForm1.username" ></el-input>
-                                                </el-col>
-                                            </el-row>
-                                            <el-row>
-                                                <el-col :span="4">
-                                                    <i class="ymq-iconlock formicon"></i>
-                                                </el-col>
-                                                <el-col :span="20">
-                                                    <el-input  placeholder="密码" class="forminput" v-model="ruleForm1.password" type="password" :show-password="showpassword" @keyup.enter.native="login"></el-input>
-                                                </el-col>
-                                            </el-row>
-                                            <div>
-                                                <span class="spans1">忘记密码</span>
-                                                <span class="spans2" @click="applyuser">新用户注册</span>
-                                            </div>
-
-                                            <el-button type="primary" style="width: 200px" size="large" @click.native.prevent="login">登录</el-button>
-                                        </div>
-                                        <!--<div class="loginform">-->
-                                        <!---->
-
-                                        <!--</div>-->
-                                        <!--<div class="loginform">-->
-
-                                        <!--</div>-->
-                                        <!--<div class="loginform">-->
-                                        <!---->
-                                        <!--</div>-->
-                                    </div>
-
-                                </div>
-
-                            </transition>
-                            <transition name="formlogins">
-                                <div  class="login" v-if="!show1">
-                                    <div  class="iconreturn">
-                                        <i class="ymq-iconarrowleft" style="font-size: 32px;" @click="returnlogin"></i>
-                                    </div>
-                                    <div class="wordlogin" style="margin-top: 80px">
-                                        <span>注册</span>
-                                    </div>
-                                    <div style="width: 100%">
-                                        <el-form :model="ruleForm2" status-icon :rules="rules" ref="ruleForm2">
+                                    <el-dropdown-menu slot="dropdown">
+                                        <el-dropdown-item command="set">设置</el-dropdown-item>
+                                        <el-dropdown-item command="out">退出登录</el-dropdown-item>
+                                    </el-dropdown-menu>
+                                </el-dropdown>
+                            </div>
+                            <el-dialog
+                                :visible.sync="dialogVisible"
+                                :fullscreen="fullscreen" class="dialog"
+                                :before-close="handleClose">
+                                <Particles></Particles>
+                                <transition name="formlogins">
+                                    <div class="login" v-if="show1">
+                                        <div class="wordlogin"><span>登录</span></div>
+                                        <div style="width: 100%">
                                             <div class="loginform">
-                                                <el-form-item prop="username" style="margin-top: 20px">
-                                                    <el-row>
-                                                        <el-col :span="4">
-                                                            <i class="ymq-iconuser formicon"></i>
-                                                        </el-col>
-                                                        <el-col :span="20">
-                                                            <el-input  placeholder="用户名" class="forminput" v-model="ruleForm2.username" ></el-input>
-                                                        </el-col>
-                                                    </el-row>
-                                                </el-form-item>
-                                                <el-form-item prop="password1" style="margin-top: 40px">
-                                                    <el-row>
-                                                        <el-col :span="4">
-                                                            <i class="ymq-iconlock formicon"></i>
-                                                        </el-col>
-                                                        <el-col :span="20">
-                                                            <el-input  placeholder="请输入密码" class="forminput" v-model="ruleForm2.password1" type="password" :show-password="showpassword" autocomplete="off"></el-input>
-                                                        </el-col>
-                                                    </el-row>
-                                                </el-form-item>
-                                                <el-form-item prop="password2" style="margin-top: 40px">
-                                                    <el-row>
-                                                        <el-col :span="4">
-                                                            <i class="ymq-iconlock formicon"></i>
-                                                        </el-col>
-                                                        <el-col :span="20">
-                                                            <el-input  placeholder="确认密码" class="forminput" v-model="ruleForm2.password2" type="password" :show-password="showpassword" autocomplete="off"></el-input>
-                                                        </el-col>
-                                                    </el-row>
-                                                </el-form-item>
-                                                <el-button type="primary" style="width: 200px" size="large" @click="userregister('ruleForm2')">注册</el-button>
+                                                <el-row>
+                                                    <el-col :span="4">
+                                                        <i class="ymq-iconuser formicon"></i>
+                                                    </el-col>
+                                                    <el-col :span="20">
+                                                        <el-input  placeholder="用户名" class="forminput" v-model="ruleForm1.username" ></el-input>
+                                                    </el-col>
+                                                </el-row>
+                                                <el-row>
+                                                    <el-col :span="4">
+                                                        <i class="ymq-iconlock formicon"></i>
+                                                    </el-col>
+                                                    <el-col :span="20">
+                                                        <el-input  placeholder="密码" class="forminput" v-model="ruleForm1.password" type="password" :show-password="showpassword" @keyup.enter.native="login"></el-input>
+                                                    </el-col>
+                                                </el-row>
+                                                <div>
+                                                    <span class="spans1">忘记密码</span>
+                                                    <span class="spans2" @click="applyuser">新用户注册</span>
+                                                </div>
 
-
+                                                <el-button type="primary" style="width: 200px" size="large" @click.native.prevent="login">登录</el-button>
                                             </div>
-                                        </el-form>
+                                            <!--<div class="loginform">-->
+                                            <!---->
 
-                                        <!--<div class="loginform">-->
+                                            <!--</div>-->
+                                            <!--<div class="loginform">-->
 
+                                            <!--</div>-->
+                                            <!--<div class="loginform">-->
+                                            <!---->
+                                            <!--</div>-->
+                                        </div>
 
-                                        <!--</div>-->
-                                        <!--<div class="loginform">-->
-                                        <!---->
-                                        <!---->
-                                        <!--</div>-->
-                                        <!--<div class="loginform">-->
-                                        <!---->
-                                        <!--</div>-->
                                     </div>
 
-                                </div>
-                            </transition>
-                            <v-loading v-if="loadingshow"></v-loading>
+                                </transition>
+                                <transition name="formlogins">
+                                    <div  class="login" v-if="!show1">
+                                        <div  class="iconreturn">
+                                            <i class="ymq-iconarrowleft" style="font-size: 32px;" @click="returnlogin"></i>
+                                        </div>
+                                        <div class="wordlogin" style="margin-top: 80px">
+                                            <span>注册</span>
+                                        </div>
+                                        <div style="width: 100%">
+                                            <el-form :model="ruleForm2" status-icon :rules="rules" ref="ruleForm2">
+                                                <div class="loginform">
+                                                    <el-form-item prop="username" style="margin-top: 20px">
+                                                        <el-row>
+                                                            <el-col :span="4">
+                                                                <i class="ymq-iconuser formicon"></i>
+                                                            </el-col>
+                                                            <el-col :span="20">
+                                                                <el-input  placeholder="用户名" class="forminput" v-model="ruleForm2.username" ></el-input>
+                                                            </el-col>
+                                                        </el-row>
+                                                    </el-form-item>
+                                                    <el-form-item prop="password1" style="margin-top: 40px">
+                                                        <el-row>
+                                                            <el-col :span="4">
+                                                                <i class="ymq-iconlock formicon"></i>
+                                                            </el-col>
+                                                            <el-col :span="20">
+                                                                <el-input  placeholder="请输入密码" class="forminput" v-model="ruleForm2.password1" type="password" :show-password="showpassword" autocomplete="off"></el-input>
+                                                            </el-col>
+                                                        </el-row>
+                                                    </el-form-item>
+                                                    <el-form-item prop="password2" style="margin-top: 40px">
+                                                        <el-row>
+                                                            <el-col :span="4">
+                                                                <i class="ymq-iconlock formicon"></i>
+                                                            </el-col>
+                                                            <el-col :span="20">
+                                                                <el-input  placeholder="确认密码" class="forminput" v-model="ruleForm2.password2" type="password" :show-password="showpassword" autocomplete="off"></el-input>
+                                                            </el-col>
+                                                        </el-row>
+                                                    </el-form-item>
+                                                    <el-button type="primary" style="width: 200px" size="large" @click="userregister('ruleForm2')">注册</el-button>
 
-                        </el-dialog>
-                    </li>
-                    <!--<li>-->
-                    <!--<a href="#" style="margin-left: 30px" @click="gotousetext"><i class="ymq-iconshiyongwendang"></i> 使用手册</a>-->
-                    <!--</li>-->
-                </ul>
+
+                                                </div>
+                                            </el-form>
+
+                                            <!--<div class="loginform">-->
+
+
+                                            <!--</div>-->
+                                            <!--<div class="loginform">-->
+                                            <!---->
+                                            <!---->
+                                            <!--</div>-->
+                                            <!--<div class="loginform">-->
+                                            <!---->
+                                            <!--</div>-->
+                                        </div>
+
+                                    </div>
+                                </transition>
+                                <v-loading v-if="loadingshow"></v-loading>
+
+                            </el-dialog>
+                        </li>
+                        <!--<li>-->
+                        <!--<a href="#" style="margin-left: 30px" @click="gotousetext"><i class="ymq-iconshiyongwendang"></i> 使用手册</a>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
             </div>
+
 
         </div>
     </div>
@@ -341,7 +345,7 @@
                     alert('请先登录！')
                     this.dialogVisible = true
                 } else {
-                    var url = 'http://zhongkeruitong.top/AIshow/chatbot/'
+                    var url = 'http://114.242.223.253/chatbot/'
                     window.open(url, '_blank')
                 }
             },
@@ -423,7 +427,7 @@
                     alert('请先登录！')
                     this.dialogVisible = true
                 } else {
-                    var url = 'http://zhongkeruitong.top/boot/#/springboot'
+                    var url = 'http://114.242.223.253/boot/#/springboot'
                     window.open(url, '_blank')
                 }
             },
@@ -544,7 +548,7 @@
             userregister (formName) {
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
-                        var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/register'
+                        var url = 'http://ailab.sdu.edu.cn:80/register'
                         this.$axios.post(url, this.$qs.stringify({
                             userId: this.ruleForm2.username,
                             password: this.ruleForm2.password1
@@ -569,7 +573,7 @@
             },
             login () {
                 this.loadingshow = true
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/login'
+                var url = 'http://ailab.sdu.edu.cn:80/login'
                 this.$axios.post(url, this.$qs.stringify({
                     userId: this.ruleForm1.username,
                     password: this.ruleForm1.password
@@ -631,7 +635,7 @@
     }
     .w {
         width: 100%;
-        margin: 0 auto;
+        /*margin: 0 auto;*/
     }
     a {
         text-decoration: none;
@@ -650,7 +654,7 @@
     }
     .fl { /*浮动的公共类*/
         float: left;
-        margin-left: 7%;
+        /*margin-left: 20px;*/
     }
     .fl img:hover {
         cursor: pointer;
@@ -658,7 +662,6 @@
     .fr {
         float: right;
         /*margin-right: 50px;*/
-        margin-right: 5%;
     }
 
     .login {

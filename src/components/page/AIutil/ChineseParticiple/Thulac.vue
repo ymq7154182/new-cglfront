@@ -55,14 +55,14 @@
         methods: {
             ThulacSegment () {
                 this.textarea1 = localStorage.getItem('text')
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/ThulacSegment?sentence=' + this.textarea1
+                var url = 'http://ailab.sdu.edu.cn:80/ThulacSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textarea2 = res.data.segment
                     this.color = '#FD694E'
                 })
             },
             ThulacSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/ThulacSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://ailab.sdu.edu.cn:80/ThulacSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaThulacSegment = res.data.segment
                     this.color1 = '#FD694E'

@@ -365,7 +365,7 @@
                     this.$message.warning('请选择上传的文件')
                 } else {
                     this.getDates()
-                    var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/fileUpload?currentTime=' + this.dates + '&userId=' + this.userId
+                    var url = 'http://ailab.sdu.edu.cn:80/fileUpload?currentTime=' + this.dates + '&userId=' + this.userId
                     const fileFormData = new FormData()
                     fileFormData.append('filename', this.file)
                     this.$axios.post(url, fileFormData,{
@@ -393,7 +393,7 @@
             },
             showListfile () {
                 this.fullscreenLoading = true
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/showPdfName'
+                var url = 'http://ailab.sdu.edu.cn:80/showPdfName'
                 this.$axios.post(url, this.$qs.stringify({
                     userId: this.userId
                 })).then((res) => {
@@ -403,7 +403,7 @@
                 })
             },
             showListfile2 () {
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/showPdfName'
+                var url = 'http://ailab.sdu.edu.cn:80/showPdfName'
                 this.$axios.post(url, this.$qs.stringify({
                     userId: this.userId
                 })).then((res) => {
@@ -411,7 +411,7 @@
                 })
             },
             getdata (row) {
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/sanyuanzushengcheng'
+                var url = 'http://ailab.sdu.edu.cn:80/sanyuanzushengcheng'
                 this.$axios.post(url,this.$qs.stringify({
                     fileName: row.fileName
                 })).then((res) => {
@@ -426,7 +426,7 @@
                     cancelButtonText: '取消',
                     type: 'warning'
                 }).then(() => {
-                    var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/deletePdfName?id=' + row.id
+                    var url = 'http://ailab.sdu.edu.cn:80/deletePdfName?id=' + row.id
                     this.$axios.post(url).then((res) => {
                         this.$message.success('删除成功！')
                         this.showListfile()
@@ -453,7 +453,7 @@
                     }
                     // console.log(s)
                     this.fullscreenLoading2 = true
-                    var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/sanyuanzushengcheng'
+                    var url = 'http://ailab.sdu.edu.cn:80/sanyuanzushengcheng'
                     this.$axios.post(url,this.$qs.stringify({
                         fileName: s
                     })).then((res) => {
@@ -592,7 +592,7 @@
                 console.log(this.dates)
             },
             getAbstract () {
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/findAbstract'
+                var url = 'http://ailab.sdu.edu.cn:80/findAbstract'
                 var s = ''
                 for (var i=0; i < this.multipleSelection.length; i++) {
                     s = s + this.multipleSelection[i].fileName + ','

@@ -87,7 +87,7 @@
         methods: {
             Standard1 () {
                 this.textarea1 = localStorage.getItem('text')
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/StandardTokenizerSegment?sentence=' + this.textarea1
+                var url = 'http://ailab.sdu.edu.cn:80/StandardTokenizerSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textarea2 = res.data.segment
                     this.color = '#FD694E'
@@ -96,7 +96,7 @@
             },
             ThulacSegment () {
                 this.textarea1 = localStorage.getItem('text')
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/StandardTokenizerSegment?sentence=' + this.textarea1
+                var url = 'http://ailab.sdu.edu.cn:80/StandardTokenizerSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textarea2 = res.data.segment
                     this.color = '#EEAC39'
@@ -105,7 +105,7 @@
             },
             page2 () {
                 this.textarea1 = localStorage.getItem('text')
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/StandardTokenizerSegment?sentence=' + this.textarea1
+                var url = 'http://ailab.sdu.edu.cn:80/StandardTokenizerSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textarea2 = res.data.segment
                     this.color = '#4DC9FE'
@@ -113,7 +113,7 @@
                 })
             },
             ThulacSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/StandardTokenizerSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://ailab.sdu.edu.cn:80/StandardTokenizerSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaThulacSegment = res.data.segment
                     this.color1 = '#FD694E'

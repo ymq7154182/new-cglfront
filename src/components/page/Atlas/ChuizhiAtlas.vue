@@ -266,7 +266,7 @@
                     spinner: 'el-icon-loading',
                     background: 'rgba(0, 0, 0, 0.7)'
                 });
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/atalsInquire'
+                var url = 'http://ailab.sdu.edu.cn:80/atalsInquire'
                 this.$axios.post(url, this.$qs.stringify({
                     entity: this.word
                 })).then((res) => {
@@ -279,7 +279,7 @@
                 })
             },
             getText () {
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/recommend?word=' + this.word
+                var url = 'http://ailab.sdu.edu.cn:80/recommend?word=' + this.word
                 this.$axios.post(url).then((res) => {
                     this.textList = res.data.info
                     this.show = true

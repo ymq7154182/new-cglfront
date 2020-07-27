@@ -79,7 +79,7 @@
         methods: {
             MaximumMatchingSegment () {
                 this.textarea1 = localStorage.getItem('text')
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/MaximumMatchingSegment?sentence=' + this.textarea1
+                var url = 'http://ailab.sdu.edu.cn:80/MaximumMatchingSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textarea2 = res.data.segment
                     this.color = '#FD694E'
@@ -87,7 +87,7 @@
             },
             MinimumMatchingSegment () {
                 this.textarea1 = localStorage.getItem('text')
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/MinimumMatchingSegment?sentence=' + this.textarea1
+                var url = 'http://ailab.sdu.edu.cn:80/MinimumMatchingSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textarea2 = res.data.segment
                     this.color = '#EEAC39'
@@ -95,28 +95,28 @@
             },
             BidirectionalMaximumMatchingSegment () {
                 this.textarea1 = localStorage.getItem('text')
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/BidirectionalMaximumMatchingSegment?sentence=' + this.textarea1
+                var url = 'http://ailab.sdu.edu.cn:80/BidirectionalMaximumMatchingSegment?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textarea2 = res.data.segment
                     this.color = '#4DC9FE'
                 })
             },
             MaximumMatchingSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/MaximumMatchingSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://ailab.sdu.edu.cn:80/MaximumMatchingSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaMaximumMatchingSegment = res.data.segment
                     this.color1 = '#FD694E'
                 })
             },
             MinimumMatchingSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/MinimumMatchingSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://ailab.sdu.edu.cn:80/MinimumMatchingSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaMinimumMatchingSegment = res.data.segment
                     this.color2 = '#EEAC39'
                 })
             },
             BidirectionalMaximumMatchingSegmentDictionary () {
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/BidirectionalMaximumMatchingSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://ailab.sdu.edu.cn:80/BidirectionalMaximumMatchingSegmentDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareaBidirectionalMaximumMatchingSegment = res.data.segment
                     this.color3 = '#4DC9FE'

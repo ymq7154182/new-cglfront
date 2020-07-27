@@ -11,7 +11,7 @@
                         <el-button size="small" type="primary">点击上传</el-button>
                         <div slot="tip" class="el-upload__tip">
                             只能上传txt文件
-                            <a href="http://zhongkeruitong.top/AIshow/AIPlatform/download" style="color: red">点击下载上传模板</a>
+                            <a href="http://ailab.sdu.edu.cn:80/download" style="color: red">点击下载上传模板</a>
                         </div>
                     </el-upload>
                 </div>
@@ -131,7 +131,7 @@
                 // f.close()
             },
             rule1 () {
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/dataCleaningRuleOne'
+                var url = 'http://ailab.sdu.edu.cn:80/dataCleaningRuleOne'
                 const fileFormData = new FormData()
                 fileFormData.append('filename', this.files)
                 this.$axios.post(url,fileFormData).then((res) => {
@@ -142,7 +142,7 @@
                 })
             },
             rule2 () {
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/dataCleaningRuleTwo'
+                var url = 'http://ailab.sdu.edu.cn:80/dataCleaningRuleTwo'
                 const fileFormData = new FormData()
                 fileFormData.append('filename', this.files)
                 this.$axios.post(url,fileFormData).then((res) => {
@@ -151,7 +151,7 @@
                 })
             },
             rule3 () {
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/dataCleaningRuleThree'
+                var url = 'http://ailab.sdu.edu.cn:80/dataCleaningRuleThree'
                 const fileFormData = new FormData()
                 fileFormData.append('filename', this.files)
                 this.$axios.post(url,fileFormData).then((res) => {

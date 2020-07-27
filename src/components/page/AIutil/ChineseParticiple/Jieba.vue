@@ -55,14 +55,14 @@
         methods: {
             sentenceProcess () {
                 this.textarea1 = localStorage.getItem('text')
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/sentenceProcess?sentence=' + this.textarea1
+                var url = 'http://ailab.sdu.edu.cn:80/sentenceProcess?sentence=' + this.textarea1
                 this.$axios.get(url).then((res) => {
                     this.textarea2 = res.data.segment
                     this.color = '#FD694E'
                 })
             },
             sentenceProcessDictionary () {
-                var url = 'http://zhongkeruitong.top/AIshow/AIPlatform/sentenceProcessDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
+                var url = 'http://ailab.sdu.edu.cn:80/sentenceProcessDictionary?sentence=' + this.textarea1 + '&userDefine=' + this.textarea3
                 this.$axios.get(url).then((res) => {
                     this.textareasentenceProcess = res.data.segment
                     this.color1 = '#FD694E'

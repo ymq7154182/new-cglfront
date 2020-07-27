@@ -111,20 +111,20 @@
         name: "GraphDatabase",
         data () {
             return {
-                url: 'http://zhongkeruitong.top/AIshow/c95fc4f6ac4242cfae784dfefd4573f01569046505338.jpg',
-                srcList: ['http://zhongkeruitong.top/AIshow/c95fc4f6ac4242cfae784dfefd4573f01569046505338.jpg'],
-                url2: 'http://zhongkeruitong.top/AIshow/61c4150e63c84536ab9dbd1c99ad9c7c1569046701367.jpg',
-                srcList2: ['http://zhongkeruitong.top/AIshow/61c4150e63c84536ab9dbd1c99ad9c7c1569046701367.jpg'],
-                url3: 'http://zhongkeruitong.top/AIshow/5a3e6f9314a64427bed92d1be2057a721569046806328.jpg',
-                srcList3: ['http://zhongkeruitong.top/AIshow/5a3e6f9314a64427bed92d1be2057a721569046806328.jpg'],
-                url4: 'http://zhongkeruitong.top/AIshow/ffb8ef61ef4c43e8a877504b54b814cc1569046900396.jpg',
-                srcList4: ['http://zhongkeruitong.top/AIshow/ffb8ef61ef4c43e8a877504b54b814cc1569046900396.jpg'],
-                url5: 'http://zhongkeruitong.top/AIshow/a8f62603b6c14d49ad1d1e0178f157eb1569047061501.jpg',
-                srcList5: ['http://zhongkeruitong.top/AIshow/a8f62603b6c14d49ad1d1e0178f157eb1569047061501.jpg'],
-                url6: 'http://zhongkeruitong.top/AIshow/cb3e2d5511da43bea7de459b104dfa461569047261426.jpg',
-                srcList6: ['http://zhongkeruitong.top/AIshow/cb3e2d5511da43bea7de459b104dfa461569047261426.jpg'],
-                url7: 'http://zhongkeruitong.top/AIshow/b10c4039552f4c8eb0947ea713d8ddaf1569047384813.jpg',
-                srcList7: ['http://zhongkeruitong.top/AIshow/b10c4039552f4c8eb0947ea713d8ddaf1569047384813.jpg']
+                url: 'http://114.242.223.253/c95fc4f6ac4242cfae784dfefd4573f01569046505338.jpg',
+                srcList: ['http://114.242.223.253/c95fc4f6ac4242cfae784dfefd4573f01569046505338.jpg'],
+                url2: 'http://114.242.223.253/61c4150e63c84536ab9dbd1c99ad9c7c1569046701367.jpg',
+                srcList2: ['http://114.242.223.253/61c4150e63c84536ab9dbd1c99ad9c7c1569046701367.jpg'],
+                url3: 'http://114.242.223.253/5a3e6f9314a64427bed92d1be2057a721569046806328.jpg',
+                srcList3: ['http://114.242.223.253/5a3e6f9314a64427bed92d1be2057a721569046806328.jpg'],
+                url4: 'http://114.242.223.253/ffb8ef61ef4c43e8a877504b54b814cc1569046900396.jpg',
+                srcList4: ['http://114.242.223.253/ffb8ef61ef4c43e8a877504b54b814cc1569046900396.jpg'],
+                url5: 'http://114.242.223.253/a8f62603b6c14d49ad1d1e0178f157eb1569047061501.jpg',
+                srcList5: ['http://114.242.223.253/a8f62603b6c14d49ad1d1e0178f157eb1569047061501.jpg'],
+                url6: 'http://114.242.223.253/cb3e2d5511da43bea7de459b104dfa461569047261426.jpg',
+                srcList6: ['http://114.242.223.253/cb3e2d5511da43bea7de459b104dfa461569047261426.jpg'],
+                url7: 'http://114.242.223.253/b10c4039552f4c8eb0947ea713d8ddaf1569047384813.jpg',
+                srcList7: ['http://114.242.223.253/b10c4039552f4c8eb0947ea713d8ddaf1569047384813.jpg']
 
             }
         }

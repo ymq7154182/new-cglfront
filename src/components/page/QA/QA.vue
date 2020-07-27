@@ -57,7 +57,7 @@
                             <span>问答机器人的应用</span>
                             <el-link type="success" style="margin-left: 40px" href="http://58.119.112.11:11004/geochat/">地质小助手</el-link>
                             <el-link type="warning" style="margin-left: 20px" href="http://58.119.112.15:11014/home">地质问答机器人</el-link>
-                            <el-link type="danger"  style="margin-left: 20px" href="http://zhongkeruitong.top/AIshow/chatbot/">医疗问答机器人</el-link>
+                            <el-link type="danger"  style="margin-left: 20px" href="http://114.242.223.253/chatbot/">医疗问答机器人</el-link>
                         </div>
                         <div style="width: 700px;margin: 0 auto">
                             <p class="ptext">随着自然语言处理技术的不断演进，以及行业服务质量的提升，问答机器人从2001年通信领域的SmarterChild到2006年IBM最强大脑Watson，再到2010年苹果公司的人工智能助手Siri，得到了大量应用场景。如今微软小冰、微软小娜、阿里小蜜、京东JIMI、网易七鱼等各类机器人层出不穷。</p>

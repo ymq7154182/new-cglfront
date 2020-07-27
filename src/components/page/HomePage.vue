@@ -163,7 +163,7 @@
                         </div>
                         <ul class="icon">
                             <!--<li><a href="#"><i class="fa fa-search"></i></a></li>-->
-                            <li><a href="#"><i class="fa ymq-iconcharulianjie"></i></a></li>
+                            <li><a href="#" @click="gotoPoint"><i class="fa ymq-iconcharulianjie"></i></a></li>
                         </ul>
 
                     </div>
@@ -205,7 +205,7 @@
                         </ul>
 
                     </div>
-                    <div class="image1 image24">
+                    <div class="image1 image24" @click="gotoPoint">
                         <!--<img src="../../assets/444.jpg">-->
                         <!--<div  class="imgtext">-->
                             <!--<span>热点预测</span>-->
@@ -546,6 +546,17 @@
                 } else {
                     var url = 'http://www.zhongkeruitong.top/pel/pel/index.html'
                     window.open(url, '_blank')
+                }
+            },
+            gotoPoint () {
+                if (this.flaglogins === false) {
+                    alert('请先登录！')
+                    this.dashow = true
+                } else {
+                    const {href} = this.$router.resolve({
+                        path: `/HotPoint`
+                    })
+                    window.open(href, '_blank')
                 }
             },
             gotosuanfa () {
