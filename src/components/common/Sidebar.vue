@@ -574,6 +574,38 @@
                         index: 'TextApplication',
                         title: '文本分类应用'
                     },
+                    {
+                        icon: 'el-icon-c-scale-to-original',
+                        index: 'Blackmouth',
+                        title: '黑嘴项目',
+                        subs: [
+                            {
+                                icon: 'el-icon-lx-home',
+                                index: 'ProjectIntroduce',
+                                title: '项目介绍'
+                            },
+                            {
+                                icon: 'el-icon-lx-home',
+                                index: 'BlackmouthDistinguish',
+                                title: '黑嘴识别'
+                            },
+                            {
+                                icon: 'el-icon-lx-home',
+                                index: 'TextAnalysis',
+                                title: '文本分析'
+                            },
+                            {
+                                icon: 'el-icon-lx-home',
+                                index: 'TextAnalysis2',
+                                title: '文本分析2'
+                            },
+                            {
+                                icon: 'el-icon-lx-home',
+                                index: 'TextAnalysis3',
+                                title: '文本分析3'
+                            }
+                        ]
+                    },
                 ],
                 items9: [
                     {
