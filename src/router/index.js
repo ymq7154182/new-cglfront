@@ -210,6 +210,31 @@ export default new Router({
                     meta: {title: '文本分类应用'}
                 },
                 {
+                    path: '/ProjectIntroduce',
+                    component: resolve => require(['../components/page/AIutil/TextClassification/ProjectIntroduce.vue'], resolve),
+                    meta: {title: '项目介绍'}
+                },
+                {
+                    path: '/BlackmouthDistinguish',
+                    component: resolve => require(['../components/page/AIutil/TextClassification/BlackmouthDistinguish.vue'], resolve),
+                    meta: {title: '黑嘴识别'}
+                },
+                {
+                    path: '/TextAnalysis',
+                    component: resolve => require(['../components/page/AIutil/TextClassification/TextAnalysis.vue'], resolve),
+                    meta: {title: '文本分析'}
+                },
+                {
+                    path: '/TextAnalysis2',
+                    component: resolve => require(['../components/page/AIutil/TextClassification/TextAnalysis2.vue'], resolve),
+                    meta: {title: '文本分析2'}
+                },
+                {
+                    path: '/TextAnalysis3',
+                    component: resolve => require(['../components/page/AIutil/TextClassification/TextAnalysis3.vue'], resolve),
+                    meta: {title: '文本分析3'}
+                },
+                {
                     path: '/QA',
                     component: resolve => require(['../components/page/QA/QA.vue'], resolve),
                     meta: {title: '问答机器人简介'}
